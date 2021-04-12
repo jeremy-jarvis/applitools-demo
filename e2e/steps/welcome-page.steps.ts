@@ -1,4 +1,4 @@
-import { AfterAll, Before, Given, Then, When } from '@cucumber/cucumber';
+import { AfterAll, Before, Given, setDefaultTimeout, Then, When } from '@cucumber/cucumber';
 import { browser, logging } from 'protractor';
 import { expect } from 'chai';
 
@@ -21,7 +21,8 @@ Then('The welcome message should be shown', async () => {
 });
 
 AfterAll(async () => {
-    // Assert that there are no errors emitted from the browser
+    // Assert that there are no errors emitted from the browser.
+    // I manually converted this from the default test provided by Protractor.
     const logs = await browser.manage().logs().get(logging.Type.BROWSER);
     logs.forEach(log => {
         expect(log.level).to.not.equal(logging.Level.SEVERE);

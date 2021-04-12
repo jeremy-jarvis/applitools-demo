@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "e2e-visual-tests": "ng e2e --protractorConfig=e2e/protractor-visual-tests.conf.js"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +28,7 @@
     "@angular-devkit/build-angular": "~0.1102.8",
     "@angular/cli": "~11.2.8",
     "@angular/compiler-cli": "~11.2.9",
+    "@applitools/eyes-protractor": "^1.13.3",
     "@cucumber/cucumber": "^7.1.0",
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
