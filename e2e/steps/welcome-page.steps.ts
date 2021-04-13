@@ -1,3 +1,7 @@
+// This is a steps file. It is where the code-behind for each Gherkin step 
+// is defined, such as Given, When, and Then. The steps are referenced in
+// the feature file(s).
+
 import { AfterAll, Before, Given, setDefaultTimeout, Then, When } from '@cucumber/cucumber';
 import { browser, logging } from 'protractor';
 import { expect } from 'chai';

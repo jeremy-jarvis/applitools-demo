@@ -1,3 +1,8 @@
+// This is a "page objects" file. It is where you can define functions using
+// Protractor to navigate the application under test and retrieve elements 
+// and properties of those elements during testing.
+// https://www.protractortest.org
+
 import { browser, by, element } from 'protractor';
 
 export class AppPage {

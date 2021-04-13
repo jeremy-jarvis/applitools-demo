@@ -2,12 +2,16 @@
 // Protractor configuration file, see link for more information
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
+// This is the protractor configuration for the visual E2E test suite
+// that uses Applitools.
+
 /**
  * @type { import("protractor").Config }
  */
- exports.config = {
+exports.config = {
   allScriptsTimeout: 11000,
   specs: [
+    // Point to the features for the visual E2E test suite.
     './visual-tests/features/**/*.feature'
   ],
   capabilities: {
@@ -24,7 +28,8 @@
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   cucumberOpts: {
-    // strict: true,
+    // Notice how the visual tests use the steps from the standard E2E test suite in addition
+    // to specific steps for the visual E2E test suite.
     require: ['./visual-tests/steps/**/*.steps.ts', './steps/**/*.steps.ts'],
     tags: ''
   },

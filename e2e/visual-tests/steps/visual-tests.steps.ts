@@ -1,3 +1,8 @@
+// These steps are used by the visual tests, and are specific to capturing
+// screenshots of the application using Applitools. For reference, see the 
+// "Protractor tutuorial" in the Applitools documentation. 
+// https://applitools.com/tutorials/protractor.html
+
 import { BatchInfo, ClassicRunner, Configuration, Eyes, RectangleSize, Target } from '@applitools/eyes-protractor'
 import { After, BeforeAll, setDefaultTimeout, Then } from '@cucumber/cucumber';
 import { browser } from 'protractor';
@@ -5,6 +10,9 @@ import { browser } from 'protractor';
 let runner: ClassicRunner;
 let eyes: Eyes;
 
+// Cucumber's default timeout is 5000 ms. This isn't enough to avoid timing out
+// during testing. So, I increased the timeout to avoid this issue. Your mileage
+// may vary.
 setDefaultTimeout(Number(20000));
 
 BeforeAll(() => {
