@@ -11,7 +11,7 @@ exports.config = {
   allScriptsTimeout: 11000,
   specs: [
     // Point to the features for the standard E2E test suite.
-    './features/**/*.feature'
+    './standard-tests/features/**/*.feature'
   ],
   capabilities: {
     browserName: 'chrome',
@@ -27,7 +27,7 @@ exports.config = {
   framework: 'custom',
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   cucumberOpts: {
-    require: ['./steps/**/*.steps.ts'],
+    require: ['./standard-tests/steps/**/*.steps.ts'],
     tags: ''
   },
   onPrepare() {

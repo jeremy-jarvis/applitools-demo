@@ -30,7 +30,7 @@ exports.config = {
   cucumberOpts: {
     // Notice how the visual tests use the steps from the standard E2E test suite in addition
     // to specific steps for the visual E2E test suite.
-    require: ['./visual-tests/steps/**/*.steps.ts', './steps/**/*.steps.ts'],
+    require: ['./visual-tests/steps/**/*.steps.ts', './standard-tests/steps/**/*.steps.ts'],
     tags: ''
   },
   onPrepare() {
