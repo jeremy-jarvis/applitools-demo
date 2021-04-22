@@ -8,8 +8,8 @@ source "https://rubygems.org"
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 
-# The theme
-gem "just-the-docs"
+# The theme, though using remote_theme in _config.yml
+# gem "just-the-docs"
 
 # To upgrade the github-pages version, run `bundle update github-pages`.
 gem "github-pages", "~> 214", group: :jekyll_plugins
