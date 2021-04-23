@@ -13,6 +13,11 @@ nav_order: 3
 1. TOC
 {:toc}
 
+## Overview
+
+You can follow the steps below to create a new Angular project, and you can [browse this commit](https://github.com/vertigon451/applitools-demo/tree/0fb884fdded91e22698b10889232fa0bfb3fce9d) to see an example of the resulting files.
+
+
 ## Install Angular
 If you don’t already have Angular installed as a global package, you’ll need to install it:
 
