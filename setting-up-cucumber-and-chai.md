@@ -15,7 +15,7 @@ nav_order: 4
 
 ## Overview
 
-You can follow the steps below to switch the testing framework from Jasmine to Cucumber and Chai. See [this diff in the example respository](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) for the resulting changes. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpfpul references.
+You can follow the steps below to switch the testing framework from Jasmine to Cucumber and Chai. See [this diff in the example repository](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) for the resulting changes. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
 
 ## Install Cucumber and Chai
 Run these commands from the project folder to install Cucumber, Chai, and the protractor-cucumber-framework.
@@ -87,7 +87,7 @@ jasmine.getEnv().addReporter(new SpecReporter({
 ```
 ## Create / Convert the Tests
 
-Now that we've replaced Jasmin with Cucumber, it's time to write the tests. Let's demonstrate how to convert the current Jasmine tests to Cucumber tests.
+Now that we've replaced Jasmine with Cucumber, it's time to write the tests. Let's demonstrate how to convert the current Jasmine tests to Cucumber tests.
 
 Jasmine keeps its spec files and page objects files under `e2e/src/`. I prefer to do away with the `e2e/src` folder and keep all of the important Cucumber folders directly under the `e2e` folder and organized by type like so:
 
@@ -183,4 +183,4 @@ You can now run the Cucumber test to see it action.
 
 ## Additional Resources
 
-If you run into issues, see [the diff for these steps](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) or the [final state](https://github.com/vertigon451/applitools-demo) of the example repository. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpfpul references.
+If you run into issues, see [the diff for these steps](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) or the [final state](https://github.com/vertigon451/applitools-demo) of the example repository. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
