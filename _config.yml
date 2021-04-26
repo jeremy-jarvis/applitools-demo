@@ -23,9 +23,9 @@ email: mail@jeremyjarvis.net
 description: >- # this means to ignore newlines until "baseurl:"
   A demonstration of testing an Angular app using Applitools, Cucumber, Protractor, and Chai.
 # baseurl: "/applitools-demo" # the subpath of your site, e.g. /blog
-# url: "https://vertigon451.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://jeremy-jarvis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
-github_username:  vertigon451
+github_username:  jeremy-jarvis
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
@@ -34,7 +34,7 @@ plugins:
 
 aux_links:
   "See the example project on Github":
-    - "//github.com/vertigon451/applitools-demo"
+    - "//github.com/jeremy-jarvis/applitools-demo"
 aux_links_new_tab: true
 
 permalink: pretty
@@ -45,7 +45,7 @@ back_to_top_text: "Back to top"
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/vertigon451/applitools-demo"
+gh_edit_repository: "https://github.com/jeremy-jarvis/applitools-demo"
 gh_edit_branch: "gh-pages" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "edit" # "tree" or "edit" if you want the user to jump into the editor immediately

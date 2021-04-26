@@ -15,7 +15,7 @@ nav_order: 4
 
 ## Overview
 
-You can follow the steps below to switch from the default Jasmine testing framework to Cucumber and Chai. See [this diff in the example repository](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) for the resulting changes. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
+You can follow the steps below to switch from the default Jasmine testing framework to Cucumber and Chai. See [this diff in the example repository](https://github.com/jeremy-jarvis/applitools-demo/compare/0fb884f...e3fb471) for the resulting changes. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
 
 ## Install Cucumber and Chai
 Run these commands from the project folder to install Cucumber, Chai, and the protractor-cucumber-framework.
