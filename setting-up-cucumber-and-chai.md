@@ -15,7 +15,7 @@ nav_order: 4
 
 ## Overview
 
-You can follow the steps below to switch the testing framework from Jasmine to Cucumber and Chai. See [this diff in the example repository](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) for the resulting changes. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
+You can follow the steps below to switch from the default Jasmine testing framework to Cucumber and Chai. See [this diff in the example repository](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) for the resulting changes. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
 
 ## Install Cucumber and Chai
 Run these commands from the project folder to install Cucumber, Chai, and the protractor-cucumber-framework.
@@ -55,6 +55,8 @@ cucumberOpts: {
 
 ### Remove Configuration that is Specific to Jasmine
 
+These three blocks should all be removed.
+
 ```
 const { SpecReporter, StacktraceOption } = require('jasmine-spec-reporter');
 ```
@@ -89,7 +91,7 @@ jasmine.getEnv().addReporter(new SpecReporter({
 
 Now that we've replaced Jasmine with Cucumber, it's time to write the tests. Let's demonstrate how to convert the current Jasmine tests to Cucumber tests.
 
-Jasmine keeps its spec files and page objects files under `e2e/src/`. I prefer to do away with the `e2e/src` folder and keep all of the important Cucumber folders directly under the `e2e` folder and organized by type like so:
+Jasmine keeps its spec files and page objects files under `e2e/src/`. I prefer to do away with the `e2e/src` folder and keep all of the important Cucumber folders directly under the `e2e` folder and organized by type like:
 
 ```
 e2e/

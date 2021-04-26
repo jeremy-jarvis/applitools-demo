@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Applitools Demonstration
+title: Applitools Demo
 email: mail@jeremyjarvis.net
 description: >- # this means to ignore newlines until "baseurl:"
   A demonstration of testing an Angular app using Applitools, Cucumber, Protractor, and Chai.

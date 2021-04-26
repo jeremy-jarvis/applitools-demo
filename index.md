@@ -8,17 +8,20 @@ nav_order: 1
 
 # Introduction
 
-[Applitools](https://applitools.com/) is a powerful tool for verifying the visual appearance of applications. 
+[Applitools](https://applitools.com/) provides powerful tools for verifying the visual appearance of applications though automated testing. They take "screenshots" of an application (including the DOM and CSS) and compares them against approved baselines, highlighting any differences found.
 
-The following documentation presents a step-by-step example of how Applitools can be used alongside [Cucumber](https://cucumber.io/), [Protractor](https://www.protractortest.org), and [Chai](https://www.chaijs.com/), to verify a web app's functional behavior and visual appearance. 
+## Documentation Overview
 
-We'll start by setting up NodeJS and creating an Angular project, and then add Cucumber and Applitools as testing tools. If you already have an app that you want to test you might want to skip ahead, but if you want the full picture of how to get from A to Z, start at the beginning.
+The following documentation presents a step-by-step example of how Applitools can be used alongside [Cucumber](https://cucumber.io/), [Protractor](https://www.protractortest.org), and [Chai](https://www.chaijs.com/), to verify a web app's visual appearance and functional behavior. 
+
+We'll start by setting up NodeJS and creating an Angular project, and then add Cucumber and Applitools as testing tools. If you already have an app that you want to test, you might want to skip ahead. If you want the full picture of how to get from A to Z, start at the beginning.
+
+See the section links on the left-hand side.
 
 ## One Test Suite, or Two
-You can choose to have one test suite that combines both functional and visual testing, or have a separate test suite for each. We'll demonstrate having two test suites, to separate concerns between functional and visual E2E (end-to-end) testing. This will allow us to execute each test suite independently. Since both will be written using Cucumber, Protractor, and Chai, the two test suites will be able to share their test step definitions and page object helper functions. This can greatly reduce the overhead of adding visual tests to an already existing E2E test suite.
+Depending on your project, it might make sense to have a single test suite that combines functional and visual testing, or have two test suites for different purposes.
 
-## An Alternative to Manual Testing
-Manual visual testing can be a tedious, time-intensive, and error-prone process. Using Applitools, visual testing can be executed frequently. This can help catch regressions or other visual design issues early, leading to higher code quality.
+We'll demonstrate having two test suites, to separate concerns between functional and visual E2E (end-to-end) testing. This will have a few benefits. For one, it will allow us to execute each test suite independently. Also, since both test suites will be written using Cucumber, Protractor, and Chai, they will able to share their test step definitions and page object helper functions, reducing duplication.
 
 ## Angular and NodeJS
 

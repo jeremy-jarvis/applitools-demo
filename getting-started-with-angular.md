@@ -19,29 +19,22 @@ You can follow the steps below to create a new Angular project, and you can [bro
 
 
 ## Install Angular
+
 If you don’t already have Angular installed as a global package, you’ll need to install it:
 
 ```
 npm install -g @angular/cli
 ```
 
-Note: To see if you already have Angular installed globally: 
-
-```
-npm list -g --depth 0
-```
-
-If this is a new installation of Node/NPM, you won’t have any global packages installed.
-
 ## Create an Angular Project
 
-Now, you can create a new Angular project. Run this command from wherever you want the project to be generated. Angular will create a new folder with the name of the project:
+Now you can create a new Angular project. Run this command from wherever you want the project to be generated. Angular will create a new folder with the name of the project:
 
 ```
 ng new my-project
 ```
 
-Angular might ask you for preferences related to strict type checking or Angular routing. You can simply accept the default answers by pressing `Enter` for each, or pick specific options if those are relevant to you.
+Angular might ask you for preferences related to strict type checking or Angular routing. You can simply accept the default answers by pressing `Enter` for each. If you wish, you can pick specific options if those are relevant to you.
 
 To run project locally, use one of the following commands:
 
@@ -82,7 +75,7 @@ npm run e2e
 
 That command will build the app, host it locally, and run the E2E tests all in one command. You should see a message that one spec was executed successfully.
 
-### Remote Debugging Port Configuration (if needed)
+### If Needed: Remote Debugging Port Configuration
 If you are running on Ubuntu/Linux you might encounter an error like:
 
 ```
