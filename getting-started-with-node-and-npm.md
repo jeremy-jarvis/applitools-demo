@@ -27,13 +27,24 @@ sudo apt install npm
 ## Configure NPM (on Ubuntu/Linux)
 When you try to install global packages, you might get an error that permission is denied. This might be because you don’t have access to the location on your machine where NPM is trying to install the global packages, such as `/usr/local/lib/node_modules`.
 
-If this happens, you could use `sudo` when you install global packages, but that might cause further permissions issues later. A better approach is to configure your global `node_modules` directory to be in a location that you have permission to:
+If this happens, you could use `sudo` when you install global packages, but that might cause further permissions issues later. A better approach is to configure your global `node_modules` directory to be in a location that you have access to:
+
+First create a folder under your home directory and configure NPM to use it.
 
 ```
 mkdir ~/.npm-global
 npm config set prefix '~/.npm-global'
-Add to path in ~/.profile:~/.npm-global/bin
-EXAMPLE: export PATH=~/.npm-global/bin:$PATH
+```
+
+Next, add `~/.npm-global/bin` to your path. One way to do this is to add this line to your `~/.profile`:
+
+```
+export PATH=~/.npm-global/bin:$PATH
+```
+
+Then, source your profile so that your terminal has the new path value.
+
+```
 source ~/.profile
 ```
 
