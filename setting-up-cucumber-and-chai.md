@@ -100,7 +100,9 @@ e2e/
   page-objects/
 ``` 
 
-First create this folder structure, and then we'll go over each of these folders.
+First create this folder structure, and then we'll go over each of these folders. 
+
+Note: During a later section, we will move these folders under a new `e2e/standard-tests/` folder. But for now, you can use the organizational structure described above.
 
 ### Features
 

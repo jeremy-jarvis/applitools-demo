@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 5. Setting up Applitools
+title: 4. Setting up Applitools
 permalink: /setting-up-applitools/
 nav_order: 5
 ---
@@ -28,7 +28,7 @@ npm install --save-dev @applitools/eyes-protractor
 
 ## Write the Applitools Tests
 
-As explained in the introduction, we are going to set up two test suites - one for the standard E2E tests and one for the visual (Applitools) E2E tests. We already have the standard test suite in place. We'll add the visual tests to a new folder to keep them separate: `e2e/visual-tests/`
+As explained in the introduction, we are going to set up two test suites: one for the standard E2E tests, and one for the visual (Applitools) E2E tests. We already have the standard test suite in place. We'll add the visual tests to a new folder to keep them separate: `e2e/visual-tests/`
 
 We are going to use Cucumber to execute our Applitools tests, so let's add a feature file and a steps file, organized under that directory:
 
@@ -38,7 +38,7 @@ e2e/visual-tests/
   steps/visual-tests.steps
 ```
 
-You can name these files however you'd like, such as `welcome-page.feature` and `welcome-page.steps`. I don't plan on having more than one feature or steps file, so I am naming them generically. Also, we'll forgo adding a `page-objects` folder. We'll borrow the page objects from the standard test suite.
+You can name these files however you'd like. I don't plan on having more than one feature or steps file, so I am naming them generically. Also, we don't need to add a `page-objects` folder because we will borrow the page objects file(s) from the standard test suite.
 
 ### Feature File
 
@@ -53,7 +53,7 @@ Feature: Visual Testing (using Applitools)
     Then The design for the welcome page should be correct
 ```
 
-As you can see, this has a lot in common with the feature file from the standard E2E test suite. The `Given` and `When` steps are reused. A new step is added to take the screenshot of the page: `Then The design for the welcome page should be correct`
+As you can see, this has a lot in common with the `welcome-page.feature` file from the standard E2E test suite. The `Given` and `When` steps are reused. A new step is added to take the screenshot of the page: `Then The design for the welcome page should be correct`
 
 You might find it valuable to verify that you are on the correct page, prior to taking a screenshot. Such a "pre-screenshot check" would prevent the test from taking a screenshot of an error page or empty page. To do so, you can borrow the `Then` from the standard test suite:
 
@@ -69,7 +69,7 @@ Let's now define that new step in the steps file
 
 ### Steps File
 
-You'll recognize a lot of the code for the steps file (`e2e/visual-tests/steps/visual-tests.steps`) from Applitools' [Protractor Tutorial](https://applitools.com/tutorials/protractor.html). First add the imports we will need:
+A lot of the code for the `visual-tests.steps` file is demonstrated in Applitools' [Protractor Tutorial](https://applitools.com/tutorials/protractor.html). First add the imports we will need:
 
 ```
 import { BatchInfo, ClassicRunner, Configuration, Eyes, RectangleSize, Target } from '@applitools/eyes-protractor'
@@ -78,7 +78,7 @@ import { browser } from 'protractor';
 
 ```
 
-Cucumber's default timeout is 5000 ms. This isn't long enough, at least on my computer, to avoid timing out during testing. So, add this line to change the default timeout. You might need to set this to a different value, depending on your development environment.
+Cucumber's default timeout is 5000 ms. This isn't long enough to avoid timing out during testing, at least on my computer. So, add this line to change your default timeout. You might be able to get away with using a shorter timeout.
 
 ```
 setDefaultTimeout(Number(20000));
@@ -100,15 +100,15 @@ BeforeAll(() => {
 });
 ```
 
-In the `BeforeAll`, we create a `ClassicRunner`, and use that to create an `Eyes` object. The classic runner is used to take screenshots of how the application looks on your local browser.
+In the `BeforeAll`, we create a `ClassicRunner`, and use that to create an `Eyes` object. The classic runner is used to take screenshots of how your application looks on your local browser.
 
-The above function expects that you have an `APPLITOOLS_API_KEY` environment variable defined to store your API key. You can get your API key from your Applitools user account. 
+The above function expects that you have an `APPLITOOLS_API_KEY` environment variable defined to store your API key. You can get your API key from your Applitools user account. Due to it being a secret key, it is best to not hard-code your API key in this file. Using an environment variable will help you avoid committing your API key to your repository's history. This is especially important for shared repositories.
 
 We set the batch name to "Applitools Demo". The test results will show up in Applitools under that batch name.
 
-*Side Note:* An alternative to the `ClassicRunner` is the `VisualGridRunner`, which uses Applitools' Ultrafast Grid / Test Cloud to render and screenshot an app on multiple cloud-hosted browsers. It's a powerful tool for testing on multiple browsers at once, which we'll cover in a later article.
+*Side Note:* An alternative to the `ClassicRunner` is the `VisualGridRunner`, which uses Applitools' Ultrafast Grid / Test Cloud to render and screenshot an app on multiple cloud-hosted browsers. It's a powerful tool for testing on multiple browsers at once. We will cover it in a later article.
 
-Next, add a `Then` function that defines the step that we referenced in the feature file (`visual-tests.feature`):
+Next, add a `Then` function that defines the step that we referenced in the feature file:
 
 ```
 Then('The design for the welcome page should be correct', async () => {
@@ -129,6 +129,8 @@ Above, we call `eyes.open` to start the test. It is called with:
 - The name of the test: `'Angular Welcome Page'`
 - The viewport size: `new RectangleSize(1024, 768)`
 
+Note: The names can be configured to whatever makes sense to you. They aren't references. They simply specify how you want the test results to be labeled in the Applitools web UI. 
+
 We call `eyes.check` to take a screenshot. You can take multiple screenshots during a test. It is called with:
 - The screenshot name: `"Angular Welcome Page"`
 - The target to capture: `Target.window().fully()` // This captures a full-page screenshot.
@@ -148,7 +150,7 @@ After(async () => {
 
 ## Configure Protractor to Execute the Visual Tests
 
-Protractor is currently configured to run the standard E2E test suite. We need to configure Protractor to also be able to run the visual (Applitools) tests. We'll have two separate NPM scripts, one for each test suite. 
+Protractor is currently configured to run the standard E2E test suite. We need to configure Protractor to also run the visual (Applitools) tests. We'll have two separate NPM scripts, one for each test suite. 
 
 Add this script to `package.json`:
 
