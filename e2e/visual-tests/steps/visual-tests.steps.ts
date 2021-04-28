@@ -3,11 +3,11 @@
 // "Protractor tutuorial" in the Applitools documentation. 
 // https://applitools.com/tutorials/protractor.html
 
-import { BatchInfo, ClassicRunner, Configuration, Eyes, RectangleSize, Target } from '@applitools/eyes-protractor'
+import { BatchInfo, BrowserType, Configuration, Eyes, RectangleSize, Target, VisualGridRunner } from '@applitools/eyes-protractor'
 import { After, BeforeAll, setDefaultTimeout, Then } from '@cucumber/cucumber';
 import { browser } from 'protractor';
 
-let runner: ClassicRunner;
+let runner: VisualGridRunner;
 let eyes: Eyes;
 
 // Cucumber's default timeout is 5000 ms. This isn't enough to avoid timing out
@@ -16,11 +16,13 @@ let eyes: Eyes;
 setDefaultTimeout(Number(20000));
 
 BeforeAll(() => {
-  runner = new ClassicRunner();
+  runner = new VisualGridRunner();
   eyes = new Eyes(runner);
   const configuration = new Configuration();
   configuration.setApiKey(process.env.APPLITOOLS_API_KEY);
-  configuration.setBatch(new BatchInfo('Applitools Demo'));
+  configuration.setBatch(new BatchInfo('Applitools Ultrafast Test Cloud Demo'));
+  configuration.addBrowser(1024, 768, BrowserType.FIREFOX);
+  configuration.addBrowser(1024, 768, BrowserType.CHROME);
   eyes.setConfiguration(configuration);
 });
 
