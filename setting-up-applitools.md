@@ -35,10 +35,12 @@ We are going to use Cucumber to execute our Applitools tests, so let's add a fea
 ```
 e2e/visual-tests/
   features/visual-tests.feature
-  steps/visual-tests.steps
+  steps/visual-tests.steps.ts
 ```
 
-You can name these files however you'd like. I don't plan on having more than one feature or steps file, so I am naming them generically. Also, we don't need to add a `page-objects` folder because we will borrow the page objects file(s) from the standard test suite.
+You can name these files however you'd like. I don't plan on having more than one feature or steps file, so I am naming them generically. For applications with multiple pages or features, consider adding separate feature and steps files for each. 
+
+Also, we don't need to add a `page-objects` folder because we will borrow the page objects file(s) from the standard test suite.
 
 ### Feature File
 
@@ -69,7 +71,7 @@ Let's now define that new step in the steps file
 
 ### Steps File
 
-A lot of the code for the `visual-tests.steps` file is demonstrated in Applitools' [Protractor Tutorial](https://applitools.com/tutorials/protractor.html). First add the imports we will need:
+A lot of the code for the `e2e/visual-tests/steps/visual-tests.steps.ts` file is demonstrated in Applitools' [Protractor Tutorial](https://applitools.com/tutorials/protractor.html). First add the imports we will need:
 
 ```
 import { BatchInfo, ClassicRunner, Configuration, Eyes, RectangleSize, Target } from '@applitools/eyes-protractor'
@@ -81,7 +83,7 @@ import { browser } from 'protractor';
 Cucumber's default timeout is 5000 ms. This isn't long enough to avoid timing out during testing, at least on my computer. So, add this line to change your default timeout. You might be able to get away with using a shorter timeout.
 
 ```
-setDefaultTimeout(Number(20000));
+setDefaultTimeout(Number(30000));
 ```
 
 Then define the `BeforeAll` function:
@@ -102,7 +104,7 @@ BeforeAll(() => {
 
 In the `BeforeAll`, we create a `ClassicRunner`, and use that to create an `Eyes` object. The classic runner is used to take screenshots of how your application looks on your local browser.
 
-The above function expects that you have an `APPLITOOLS_API_KEY` environment variable defined to store your API key. You can get your API key from your Applitools user account. Due to it being a secret key, it is best to not hard-code your API key in this file. Using an environment variable will help you avoid committing your API key to your repository's history. This is especially important for shared repositories.
+The above function expects that you have an `APPLITOOLS_API_KEY` environment variable defined to store your API key. You can get your API key from your Applitools user account. Due to it being a secret key, it is best to NOT hard-code your API key in this file. Using an environment variable will help you avoid committing your API key to your repository's history. This is especially important for shared repositories.
 
 We set the batch name to "Applitools Demo". The test results will show up in Applitools under that batch name.
 
@@ -158,7 +160,7 @@ Add this script to `package.json`:
 "e2e-visual-tests": "ng e2e --protractorConfig=e2e/protractor-visual-tests.conf.js"
 ```
 
-Now, let's add the `protractor-visual-tests.conf.js` file that we just referenced.
+Now, let's add the `e2e/protractor-visual-tests.conf.js` file that we just referenced. It will live alongside the `protractor.conf.js` file.
 
 ```
 // @ts-check

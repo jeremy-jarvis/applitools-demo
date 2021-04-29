@@ -47,6 +47,17 @@ cucumberOpts: {
 },
 ```
 
+Update `e2e/protractor-visual-tests.conf.js` to point to the new location of the steps for the standard E2E tests.
+
+```
+cucumberOpts: {
+  // Notice how the visual tests use the steps from the standard E2E test suite in addition
+  // to specific steps for the visual E2E test suite.
+  require: ['./visual-tests/steps/**/*.steps.ts', './standard-tests/steps/**/*.steps.ts'],
+  tags: ''
+},
+```
+
 ## Improve E2E NPM Scripts
 
 Currently, we can run `npm run e2e` to execute the standard tests, and `npm run e2e-visual-tests` to run the visual tests using Applitools. It might be helpful to have a descriptive name for the standard test script. Also, it might be helpful to have a single script that executes both test suites. Consider setting up the scripts in the `package.json` file like so:
@@ -58,5 +69,3 @@ Currently, we can run `npm run e2e` to execute the standard tests, and `npm run 
 ```
 
 Your own NPM scripts might not look like this, which is okay. This is just one way to organize them. Such scripts are very dependent upon the needs of the project and development team. Do what makes sense for you. For example, you might prefer to have short names for the scripts like `e2e` and `e2e-viz`.
-
-

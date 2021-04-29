@@ -25,7 +25,15 @@ The Ultrafast Test Cloud (sometimes referred to as the "Ultrafast Grid"), captur
 
 ## Configuration Changes
 
-Instead of a ClassicRunner, we are going to use a VisualGridRunner. This is the runner for the Ultrafast Test Cloud. 
+Make the following changes to the `e2e/visual-tests/steps/visual-tests.steps.ts` file. We are going to use a VisualGridRunner instead of the ClassicRunner. This is the runner for the Ultrafast Test Cloud. 
+
+Update the imports to include the VisualGridRunner and BrowserType. Remove the import of the ClassicRunner.
+
+```
+import { BatchInfo, BrowserType, Configuration, Eyes, RectangleSize, Target, VisualGridRunner } from '@applitools/eyes-protractor'
+```
+
+Change the `runner` variable.
 
 ```
 let runner: VisualGridRunner;

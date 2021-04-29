@@ -119,7 +119,7 @@ Feature: Welcome Page
 
 ### Steps
 
-Each step in the scenario above must be defined in a steps file. Add `e2e/steps/welcome-page-steps.ts` file with the following content:
+Each step in the scenario above must be defined in a steps file. Add `e2e/steps/welcome-page.steps.ts` file with the following content:
 
 ```
 import { AfterAll, Before, Given, Then, When } from '@cucumber/cucumber';
@@ -155,6 +155,10 @@ AfterAll(async () => {
 ### Page Objects
 
 We already have a page-object file at `e2e/src/app.po.ts`. Move it to `e2e/page-objects/app.po.ts`.
+
+## Delete the `e2e/src/` Folder
+
+The `app.e2e-spec.ts` file should be the only thing left in the `e2e/src/` folder. Go ahead and delete the `e2e/src/` folder including the spec file. It was replaced by `e2e/steps/welcome-page.steps.ts`.
 
 ## Optional Improvement
 

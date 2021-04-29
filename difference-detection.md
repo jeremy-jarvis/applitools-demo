@@ -31,6 +31,6 @@ Now run the tests again using `npm run e2e-visual-tests`. You'll notice that the
 
 ## View Differences in the Applitools Web UI
 
-Take a look at the results in the Applitools web UI. You'll see that the area around the "Links" text is highlighted. Applitools is informing us that something in the app's UI has changed. If you choose to accept the change, then the new screenshot will be saved as the baseline for this particular test.
+Take a look at the results in the Applitools web UI. You'll see that the area around the "Links" text is highlighted. Applitools is informing us that this area of the app's UI has changed. If you choose to accept the change, then the new screenshot will be saved as the baseline for this particular test.
 
 This just scratches the surface of the features in the Applitools web UI, but it should be enough to get you started.

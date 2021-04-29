@@ -31,10 +31,16 @@ npm install -g @angular/cli
 Now you can create a new Angular project. Run this command from wherever you want the project to be generated. Angular will create a new folder with the name of the project:
 
 ```
-ng new my-project
+ng new applitools-demo
 ```
 
 Angular might ask you for preferences related to strict type checking or Angular routing. You can simply accept the default answers by pressing `Enter` for each. If you wish, you can pick specific options if those are relevant to you.
+
+Change to the folder that was just created:
+
+```
+cd applitools-demo
+```
 
 To run project locally, use one of the following commands:
 
@@ -58,13 +64,13 @@ New Angular projects come with an E2E (end-to-end) test suite that uses Jasmine 
 That being said, we are going to switch to using Cucumber in a later guide. For now, you can take a look at the files under the `e2e` folder to see how Jasmine organizes things.
 
 ### e2e/src/app.e2e-spec.ts
-This file contains the test case(s). Each `it` is a test case that verifies some aspect of the default Angular app. The "should display a welcome message" test case navigates to the page, retrieves the title text, and verifies that the text is a specific string.
+This file contains the test case(s). Each `it` is a test case that verifies some aspect of the default Angular app. The "should display welcome message" test case navigates to the page, retrieves the title text, and verifies that the text is a specific string.
 
-### app.po.ts
+### e2e/src/app.po.ts
 This file contains helper functions that navigate the application and retrieve elements from the page using Protractor. Functions in this file are called by the spec files (e.g. `app.e2e-spec.ts`)
 
-### protractor.conf.js
-This file configures how Protractor behaves. Of particular note is the `specs` property, which tells Protractor where all the spec files are kept. Also, the framework is set to "jasmine", with other specific jasmine configuration such as `jasmineNodeOpts`.  In a later guide, we’ll switch from Jasmine to Cucumber, and references to jasmine will be removed from this file.
+### e2e/protractor.conf.js
+This file configures how Protractor behaves. Of particular note is the `specs` property, which tells Protractor where all the spec files are kept. Also, the framework is set to "jasmine", with other specific jasmine configuration such as `jasmineNodeOpts`.  In a later guide we’ll switch from Jasmine to Cucumber, and remove Jasmine references from this file.
 
 ## Run the E2E Tests
 To run the default E2E tests:
