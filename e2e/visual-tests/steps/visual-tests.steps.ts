@@ -13,7 +13,7 @@ let eyes: Eyes;
 // Cucumber's default timeout is 5000 ms. This isn't enough to avoid timing out
 // during testing. So, I increased the timeout to avoid this issue. Your mileage
 // may vary.
-setDefaultTimeout(Number(20000));
+setDefaultTimeout(Number(30000));
 
 BeforeAll(() => {
   runner = new VisualGridRunner();
