@@ -33,4 +33,4 @@ The bulk of this guide is applicable to all development environments (Windows, m
 
 ## Continue
 
-Next Step: [Set up Node and NPM](/set-up-node-and-npm)
+Next Step: [Set up Node and NPM]({% link set-up-node-and-npm.md %})

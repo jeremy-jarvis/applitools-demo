@@ -232,4 +232,4 @@ Note: If the test fails prior to taking the screenshot, then no batch will show 
 
 ## Continue
 
-Next Step: [Additional Improvements](/additional-improvements)
+Next Step: [Additional Improvements]({% link additional-improvements.md %})

@@ -76,4 +76,4 @@ For additional guidance, see [this tutorial](https://applitools.com/tutorials/pr
 
 ## Continue
 
-Next Step: [Applitools Change Detection](/applitools-change-detection)
+Next Step: [Applitools Change Detection]({% link applitools-change-detection.md %})
