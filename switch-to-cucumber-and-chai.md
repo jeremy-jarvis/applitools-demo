@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 3. Swich to Cucumber and Chai
+title: 3. Switch to Cucumber and Chai
 permalink: /switch-to-cucumber-and-chai/
 nav_order: 4
 ---
@@ -192,3 +192,7 @@ You can now run the Cucumber test to see it action.
 ## Additional Resources
 
 If you run into issues, see [the diff for these steps](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) or the [final state](https://github.com/vertigon451/applitools-demo) of the example repository. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
+
+## Continue
+
+Next Step: [Set up Applitools](/set-up-applitools)

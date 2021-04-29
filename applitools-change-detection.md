@@ -34,3 +34,7 @@ Now run the tests again using `npm run e2e-visual-tests`. You'll notice that the
 Take a look at the results in the Applitools web UI. You'll see that the area around the "Links" text is highlighted. Applitools is informing us that this area of the app's UI has changed. If you choose to accept the change, then the new screenshot will be saved as the baseline for this particular test.
 
 This just scratches the surface of the features in the Applitools web UI, but it should be enough to get you started.
+
+## The End, or Just the Beginning?
+
+I hope that you found this guide helpful! If you have an idea for improvement, please use the `Edit this page on GitHub` link at the bottom of each page, or submit a PR to [this gh-pages branch](https://github.com/jeremy-jarvis/applitools-demo/tree/gh-pages). 

@@ -49,3 +49,7 @@ source ~/.profile
 ```
 
 Now, when you install global packages using NPM, they will reside under your home directory at `~/.npm-global`. For more info on this, see [the answer to this question on Stack Overflow](https://stackoverflow.com/questions/33725639/npm-install-g-less-does-not-work-eacces-permission-denied)
+
+## Continue
+
+Next Step: [Set up Angular Project](/set-up-angular-project)

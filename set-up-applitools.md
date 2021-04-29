@@ -229,3 +229,7 @@ npm run e2e-visual-tests
 The tests should pass. Log into your Applitools account and you should see an "Applitools Demo" batch with a single screenshot.
 
 Note: If the test fails prior to taking the screenshot, then no batch will show up in the Applitools' web UI.
+
+## Continue
+
+Next Step: [Additional Improvements](/additional-improvements)

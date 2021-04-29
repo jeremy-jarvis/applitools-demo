@@ -100,3 +100,7 @@ chromeOptions: {
 
 ### Chrome vs Chromium
 By default Protractor uses “Chrome” to execute the E2E tests, but Chromium worked fine for me without any further configuration. I only have Chromium installed.
+
+## Continue
+
+Next Step: [Switch to Cucumber and Chai](/switch-to-cucumber-and-chai)

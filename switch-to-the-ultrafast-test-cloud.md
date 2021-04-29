@@ -73,3 +73,7 @@ npm run e2e-visual-tests
 You should see that the tests pass, and that a screenshot for each browser shows up in the Applitools web UI under a new batch named "Applitools Ultrafast Test Cloud Demo".
 
 For additional guidance, see [this tutorial](https://applitools.com/tutorials/protractor.html#_1-introduction-to-the-ultrafast-grid).
+
+## Continue
+
+Next Step: [Applitools Change Detection](/applitools-change-detection)
