@@ -22,7 +22,7 @@ title: Applitools Demo
 email: mail@jeremyjarvis.net
 description: >- # this means to ignore newlines until "baseurl:"
   A demonstration of testing an Angular app using Applitools, Cucumber, Protractor, and Chai.
-baseurl: "/applitools-demo/" # the subpath of your site, e.g. /blog
+baseurl: "/applitools-demo" # the subpath of your site, e.g. /blog
 url: "https://jeremy-jarvis.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
 github_username:  jeremy-jarvis
