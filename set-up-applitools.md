@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 4. Setting up Applitools
-permalink: /setting-up-applitools/
+title: 4. Set up Applitools
+permalink: /set-up-applitools/
 nav_order: 5
 ---
 
-# Setting up Applitools
+# Set up Applitools
 
 ## Table of contents
 {: .no_toc .text-delta }

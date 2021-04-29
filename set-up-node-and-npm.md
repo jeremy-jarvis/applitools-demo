@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 1. Getting Started with Node and NPM
-permalink: /getting-started-with-node-and-npm/
+title: 1. Set up Node and NPM
+permalink: /set-up-node-and-npm/
 nav_order: 2
 ---
 
-# Getting Started with Node and NPM
+# Set up Node and NPM
 
 ## Table of contents
 {: .no_toc .text-delta }

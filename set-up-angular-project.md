@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 2. Getting Started with Angular
-permalink: /getting-started-with-angular/
+title: 2. Set up Angular Project
+permalink: /set-up-angular-project/
 nav_order: 3
 ---
 
-# Getting started with Angular
+# Set up Angular Project
 
 ## Table of contents
 {: .no_toc .text-delta }

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 3. Setting up Cucumber and Chai
-permalink: /setting-up-cucumber-and-chai/
+title: 3. Swich to Cucumber and Chai
+permalink: /switch-to-cucumber-and-chai/
 nav_order: 4
 ---
 
-# Setting up Cucumber and Chai
+# Switch to Cucumber and Chai
 
 ## Table of contents
 {: .no_toc .text-delta }

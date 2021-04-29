@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 6. Switching to the Ultrafast Test Cloud
+title: 6. Switch to the Ultrafast Test Cloud
 permalink: /switch-to-the-ultrafast-test-cloud/
 nav_order: 7
 ---
 
-# Switching to the Ultrafast Test Cloud
+# Switch to the Ultrafast Test Cloud
 
 ## Table of contents
 {: .no_toc .text-delta }

@@ -1,11 +1,11 @@
 ---
 layout: page
-title: 7. Difference Detection
-permalink: /difference-detection/
+title: 7. Applitools Change Detection
+permalink: /applitools-change-detection/
 nav_order: 8
 ---
 
-# Difference Detection
+# Applitools Change Detection
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -15,7 +15,7 @@ nav_order: 8
 
 ## Overview
 
-Let's try out Applitools' difference detection.
+Let's try out Applitools' change detection.
 
 The first time that you run a new test, Applitools saves a screenshot as the first approved "baseline". From then on, whenever you run the test, Applitools will take a new screenshot and compare it to the approved baseline screenshot. If Applitools detects any differences, it will flag them and allow you to accept or reject them. If you accept the differences, a new baseline is saved for that screenshot. This workflow allows you to keep track of when the application changes, and only approve those changes that are acceptable.
 
