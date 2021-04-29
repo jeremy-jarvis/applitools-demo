@@ -103,4 +103,4 @@ By default Protractor uses “Chrome” to execute the E2E tests, but Chromium w
 
 ## Continue
 
-Next Step: [Switch to Cucumber and Chai]({% link switch-to-cucumber-and-chai.md %})
+Next Step: [Switch to Cucumber and Chai]({{ site.baseurl }}{% link switch-to-cucumber-and-chai.md %})

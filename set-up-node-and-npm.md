@@ -52,4 +52,4 @@ Now, when you install global packages using NPM, they will reside under your hom
 
 ## Continue
 
-Next Step: [Set up Angular Project]({% link set-up-angular-project.md %})
+Next Step: [Set up Angular Project]({{ site.baseurl }}{% link set-up-angular-project.md %})

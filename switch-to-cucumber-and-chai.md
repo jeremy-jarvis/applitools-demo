@@ -195,4 +195,4 @@ If you run into issues, see [the diff for these steps](https://github.com/vertig
 
 ## Continue
 
-Next Step: [Set up Applitools]({% link set-up-applitools.md %})
+Next Step: [Set up Applitools]({{ site.baseurl }}{% link set-up-applitools.md %})
