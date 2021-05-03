@@ -58,6 +58,8 @@ I typically use `npm start` because I prefer using Node's `package.json` file as
 
 You can go to [http://localhost:4200](http://localhost:4200) using a web browser to see the app. You now have a functioning Angular app. Woo!
 
+[![Default Angular App]({{ site.baseurl }}{% link assets/default-angular-app.png %}){: width="75%" }]({{ site.baseurl }}{% link assets/default-angular-app.png %})
+
 ## Overview of E2E Test Files (Jasmine and Protractor)
 New Angular projects come with an E2E (end-to-end) test suite that uses Jasmine and Protractor. Kudos to the Angular team for including E2E as a default component of their projects. It sets a good example and gives you what you need to hit the ground running with integration testing.
 
@@ -80,6 +82,8 @@ npm run e2e
 ```
 
 That command will build the app, host it locally, and run the E2E tests all in one command. You should see a message that one spec was executed successfully.
+
+[![Jasmine Test Results]({{ site.baseurl }}{% link assets/jasmine-test-results.png %})]({{ site.baseurl }}{% link assets/jasmine-test-results.png %})
 
 ### If Needed: Remote Debugging Port Configuration
 If you are running on Ubuntu/Linux you might encounter an error like:

@@ -31,7 +31,13 @@ Now run the tests again using `npm run e2e-visual-tests`. You'll notice that the
 
 ## View Differences in the Applitools Web UI
 
-Take a look at the results in the Applitools web UI. You'll see that the area around the "Links" text is highlighted. Applitools is informing us that this area of the app's UI has changed. If you choose to accept the change, then the new screenshot will be saved as the baseline for this particular test.
+Take a look at the results in the Applitools web UI. You'll see that both tests in the batch have failed.
+
+[![Applitools Test Results With Detected Change]({{ site.baseurl }}{% link assets/applitools-ultrafast-results-with-detected-change.png %})]({{ site.baseurl }}{% link assets/applitools-ultrafast-results-with-detected-change.png %})
+
+Click one of the screenshots to see it closer. You'll notice that the area around the "Links" text is highlighted. Applitools is informing us that this area of the app's UI has changed. If you choose to accept the change, then the new screenshot will be saved as the baseline for this particular test.
+
+[![Applitools Test Results With Detected Change]({{ site.baseurl }}{% link assets/applitools-ultrafast-results-with-detected-change-up-close.png %})]({{ site.baseurl }}{% link assets/applitools-ultrafast-results-with-detected-change-up-close.png %})
 
 This just scratches the surface of the features in the Applitools web UI, but it should be enough to get you started.
 

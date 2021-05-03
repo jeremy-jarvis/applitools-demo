@@ -228,6 +228,8 @@ npm run e2e-visual-tests
 
 The tests should pass. Log into your Applitools account and you should see an "Applitools Demo" batch with a single screenshot.
 
+[![Applitools Classic Runner Results]({{ site.baseurl }}{% link assets/applitools-classic-runner-results.png %})]({{ site.baseurl }}{% link assets/applitools-classic-runner-results.png %})
+
 Note: If the test fails prior to taking the screenshot, then no batch will show up in the Applitools' web UI.
 
 ## Continue
