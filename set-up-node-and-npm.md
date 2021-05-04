@@ -15,17 +15,19 @@ nav_order: 2
 
 ## Install Node and NPM
 
-There are two primary ways to install Node: Either using a Node version manager ("NVM" for short), or by simply using a Node installer.
+There are two primary ways to install Node: Either using a Node version manager, or by installing Node directly using an installer.
 
-### Node Version Manager (NVM)
+### Node Version Manager
 
-I have found that developers who are experienced with Node often appreciate the benefits of using a Node version manager. It makes it easy to install, upgrade, and switch between Node versions. This is really handy when you are working on two different web apps that are using different Node versions. Also, the NPM documentation recommends using a Node version manager instead of a Node installer, so they are worth a look.
+I have found that developers who are experienced with Node often appreciate the benefits of using a Node version manager. They make it easy to install, upgrade, and switch between Node versions. This is really handy when you are working on two different web apps that are using different versions of Node. Also, the NPM documentation recommends using a Node version manager instead of a Node installer, so they are worth a look.
+
+It can be confusing if someone just tells you to "install NVM" because there are a few such Node version managers around, including one named "nvm".
 
 For Windows, I have used [nvm-windows](https://github.com/coreybutler/nvm-windows). There are [additional options](https://docs.npmjs.com/cli/v6/configuring-npm/install#using-a-node-version-manager-to-install-node-js-and-npm) for Windows, macOS, and Linux.
 
 ### Node Installer
 
-Alternatively, If you just want to try out Node and don't want to fuss with a Node version manager, then you can install Node directly. This has worked fine for me on Windows. It isn't as easy to switch or upgrade Node versions, compared to using a Node version manager, but it can get you up and running with a recent version of Node.
+Alternatively, If you just want to try out Node and don't want to use a Node version manager, then you can install Node directly. This has worked fine for me on Windows. It isn't as easy when you want to switch or upgrade Node versions, but it can get you up and running with a recent version of Node.
 
 If you have Windows or macOS, you can [download a Node installer here](https://nodejs.org/en/). Note: NPM will be installed by the Node installer.
 
