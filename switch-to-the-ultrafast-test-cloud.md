@@ -76,6 +76,6 @@ You should see that the tests pass, and that a screenshot for each browser shows
 
 For additional guidance, see [this tutorial](https://applitools.com/tutorials/protractor.html#_1-introduction-to-the-ultrafast-grid).
 
-## Continue
+## Next...
 
-Next Step: [Applitools Change Detection]({{ site.baseurl }}{% link applitools-change-detection.md %})
+[Applitools Change Detection]({{ site.baseurl }}{% link applitools-change-detection.md %})

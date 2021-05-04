@@ -197,6 +197,6 @@ You should see a line of dots with no "F" characters (which indicate failures), 
 
 If you run into issues, see [the diff for these steps](https://github.com/vertigon451/applitools-demo/compare/0fb884f...e3fb471) or the [final state](https://github.com/vertigon451/applitools-demo) of the example repository. You may also find [this documentation](https://www.npmjs.com/package/protractor-cucumber-framework) and [this article](https://www.amadousall.com/angular-e2e-with-cucumber/) to be helpful references.
 
-## Continue
+## Next...
 
-Next Step: [Set up Applitools]({{ site.baseurl }}{% link set-up-applitools.md %})
+[Set up Applitools]({{ site.baseurl }}{% link set-up-applitools.md %})

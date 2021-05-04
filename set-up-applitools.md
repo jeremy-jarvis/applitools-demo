@@ -232,6 +232,6 @@ The tests should pass. Log into your Applitools account and you should see an "A
 
 Note: If the test fails prior to taking the screenshot, then no batch will show up in the Applitools' web UI.
 
-## Continue
+## Next...
 
-Next Step: [Additional Improvements]({{ site.baseurl }}{% link additional-improvements.md %})
+[Additional Improvements]({{ site.baseurl }}{% link additional-improvements.md %})

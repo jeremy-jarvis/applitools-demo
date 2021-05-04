@@ -70,6 +70,6 @@ Currently, we can run `npm run e2e` to execute the standard tests, and `npm run 
 
 Your own NPM scripts might not look like this, which is okay. This is just one way to organize them. Such scripts are very dependent upon the needs of the project and development team. Do what makes sense for you. For example, you might prefer to have short names for the scripts like `e2e` and `e2e-viz`.
 
-## Continue
+## Next...
 
-Next Step: [Switch to the Ultrafast Test Cloud]({{ site.baseurl }}{% link switch-to-the-ultrafast-test-cloud.md %})
+[Switch to the Ultrafast Test Cloud]({{ site.baseurl }}{% link switch-to-the-ultrafast-test-cloud.md %})
