@@ -62,7 +62,7 @@ You can go to [http://localhost:4200](http://localhost:4200) using a web browser
 ## Overview of E2E Test Files (Jasmine and Protractor)
 New Angular projects come with an E2E (end-to-end) test suite that uses Jasmine and Protractor. Kudos to the Angular team for including E2E as a default component of their projects. It sets a good example and gives you what you need to hit the ground running with integration testing.
 
-That being said, we are going to switch to using Cucumber in a later guide. For now, you can take a look at the files under the `e2e` folder to see how Jasmine organizes things.
+That being said, we are going to switch to using Cucumber in a later section. For now, you can take a look at the files under the `e2e` folder to see how Jasmine organizes things.
 
 ### e2e/src/app.e2e-spec.ts
 This file contains the test case(s). Each `it` is a test case that verifies some aspect of the default Angular app. The "should display welcome message" test case navigates to the page, retrieves the title text, and verifies that the text is a specific string.
@@ -71,7 +71,7 @@ This file contains the test case(s). Each `it` is a test case that verifies some
 This file contains helper functions that navigate the application and retrieve elements from the page using Protractor. Functions in this file are called by the spec files (e.g. `app.e2e-spec.ts`)
 
 ### e2e/protractor.conf.js
-This file configures how Protractor behaves. Of particular note is the `specs` property, which tells Protractor where all the spec files are kept. Also, the framework is set to "jasmine", with other specific jasmine configuration such as `jasmineNodeOpts`.  In a later guide we’ll switch from Jasmine to Cucumber, and remove Jasmine references from this file.
+This file configures how Protractor behaves. Of particular note is the `specs` property, which tells Protractor where all the spec files are kept. Also, the framework is set to "jasmine", with other specific jasmine configuration such as `jasmineNodeOpts`.  In a later section we’ll switch from Jasmine to Cucumber, and remove Jasmine references from this file.
 
 ## Run the E2E Tests
 To run the default E2E tests:

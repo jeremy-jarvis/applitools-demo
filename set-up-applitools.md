@@ -17,7 +17,7 @@ nav_order: 5
 
 You can follow the steps below to set up an Applitools test suite. See [this commit in the example repository](https://github.com/jeremy-jarvis/applitools-demo/commit/7fad99f62ed065c31d8d3fdf0607e1d47a8aec80) for the resulting changes. You might also find [this documentation](https://applitools.com/tutorials/protractor.html) helpful.
 
-Note: You will need an [Applitools](https://applitools.com/) account to run the tests. The tests will upload screenshots to your account on the Applitools web interface for easy viewing and approving.
+Note: You will need an [Applitools](https://applitools.com/) account to run the tests. The tests will upload screenshots to your account on the Applitools Eyes web dashboard for easy viewing and approving.
 
 ## Install Applitools
 Run this command from the project folder to install the `@applitools/eyes-protractor` NPM package.
@@ -102,11 +102,11 @@ BeforeAll(() => {
 });
 ```
 
-In the `BeforeAll`, we create a `ClassicRunner`, and use that to create an `Eyes` object. The classic runner is used to take screenshots of how your application looks on your local browser.
+In the `BeforeAll`, we create a `ClassicRunner`, and use that to create an `Eyes` object. The classic runner is used to take screenshots of how your application looks on your local browser. It uses Applitools Eyes for analysis, without using the Ultrafast Grid.
 
 The above function expects that you have an `APPLITOOLS_API_KEY` environment variable defined to store your API key. You can get your API key from your Applitools user account. Due to it being a secret key, it is best to NOT hard-code your API key in this file. Using an environment variable will help you avoid committing your API key to your repository's history. This is especially important for shared repositories.
 
-We set the batch name to "Applitools Demo". The test results will show up in Applitools under that batch name.
+We set the batch name to "Applitools Demo". The test results will show up in the Applitools Eyes web dashboard under that batch name.
 
 *Side Note:* An alternative to the `ClassicRunner` is the `VisualGridRunner`, which uses Applitools' Ultrafast Grid / Test Cloud to render and screenshot an app on multiple cloud-hosted browsers. It's a powerful tool for testing on multiple browsers at once. We will cover it in a later article.
 
@@ -131,7 +131,7 @@ Above, we call `eyes.open` to start the test. It is called with:
 - The name of the test: `'Angular Welcome Page'`
 - The viewport size: `new RectangleSize(1024, 768)`
 
-Note: The names can be configured to whatever makes sense to you. They aren't references. They simply specify how you want the test results to be labeled in the Applitools web UI. 
+Note: The names can be configured to whatever makes sense to you. They aren't references. They simply specify how you want the test results to be labeled in the Applitools Eyes web dashboard.
 
 We call `eyes.check` to take a screenshot. You can take multiple screenshots during a test. It is called with:
 - The screenshot name: `"Angular Welcome Page"`
@@ -226,11 +226,11 @@ Then, use this command to run the tests:
 npm run e2e-visual-tests
 ```
 
-The tests should pass. Log into your Applitools account and you should see an "Applitools Demo" batch with a single screenshot.
+The tests should pass. Log into the Applitools Eyes web dashboard and you should see an "Applitools Demo" batch with a single screenshot.
 
 [![Applitools Classic Runner Results]({{ site.baseurl }}{% link assets/applitools-classic-runner-results.png %})]({{ site.baseurl }}{% link assets/applitools-classic-runner-results.png %})
 
-Note: If the test fails prior to taking the screenshot, then no batch will show up in the Applitools' web UI.
+Note: If the test fails prior to taking the screenshot, then no batch will show up in the Applitools Eyes web dashboard.
 
 ## Next...
 

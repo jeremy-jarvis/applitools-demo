@@ -72,4 +72,4 @@ Your own NPM scripts might not look like this, which is okay. This is just one w
 
 ## Next...
 
-[Switch to the Ultrafast Test Cloud]({{ site.baseurl }}{% link switch-to-the-ultrafast-test-cloud.md %})
+[Switch to the Ultrafast Grid]({{ site.baseurl }}{% link switch-to-the-ultrafast-grid.md %})

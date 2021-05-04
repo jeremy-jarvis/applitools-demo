@@ -8,11 +8,17 @@ nav_order: 1
 
 # Introduction
 
-## Overview
+## Applitools
 
-[Applitools](https://applitools.com/) is a powerful toolset for verifying the visual appearance of an application though automated testing. Such tests can take "screenshots" of an application (including the DOM and CSS) and compare them against approved baselines, highlighting any differences found.
+[Applitools](https://applitools.com/) provides a powerful set of testing tools for verifying an app's visual appearance.
 
-This walkthrough presents a step-by-step example of how Applitools can be used alongside [Cucumber](https://cucumber.io/), [Protractor](https://www.protractortest.org), and [Chai](https://www.chaijs.com/), to verify a web app's visual appearance and functional behavior.
+Automated tests can use the Applitools SDK to take screenshots of an application, which are then sent to [Applitools Eyes](https://applitools.com/products-eyes/) to be analyzed. The results are displayed in the Applitools Eyes web dashboard, which highlights any detected differences from the approved baseline screenshots.
+
+Additionally, their [Ultrafast Grid](https://applitools.com/product-ultrafast-test-cloud/) is a powerful tool for visualizing how an application looks on multiple browsers. You can run your tests once on a local browser, and the Ultrafast Grid will render the resulting site on multiple browsers within its cloud. The results, including detected differences, are then displayed on the Applitools Eyes web dashboard. For more information on how Applitools Eyes and the Ultrafast Grid work together, take a look at this [overview of the Ultrafast Test Cloud](https://applitools.com/platform-overview/).
+
+## This Guide
+
+This guide presents a step-by-step walkthrough of how Applitools can be used alongside [Cucumber](https://cucumber.io/), [Protractor](https://www.protractortest.org), and [Chai](https://www.chaijs.com/) to verify a web app's visual appearance and functional behavior.
 
 We'll start by installing Node/NPM and creating an Angular project, and then we'll add Cucumber and Applitools as testing tools. If you already have an app that you want to test, you might want to skip ahead. If you want the full picture of how to get from A to Z, [start at the beginning](/set-up-node-and-npm).
 
