@@ -71,7 +71,7 @@ Let's now define that new step in the steps file
 
 ### Steps File
 
-A lot of the code for the `e2e/visual-tests/steps/visual-tests.steps.ts` file is demonstrated in Applitools' [Protractor Tutorial](https://applitools.com/tutorials/protractor.html). First add the imports we will need:
+A lot of the code for the steps file is demonstrated in Applitools' [Protractor Tutorial](https://applitools.com/tutorials/protractor.html). First add the following imports to the  `e2e/visual-tests/steps/visual-tests.steps.ts` file:
 
 ```
 import { BatchInfo, ClassicRunner, Configuration, Eyes, RectangleSize, Target } from '@applitools/eyes-protractor'
@@ -80,13 +80,13 @@ import { browser } from 'protractor';
 
 ```
 
-Cucumber's default timeout is 5000 ms. This isn't long enough to avoid timing out during testing, at least on my computer. So, add this line to change your default timeout. You might be able to get away with using a shorter timeout.
+Cucumber's default timeout is 5000 ms. This isn't long enough to avoid timing out during testing, at least on my computer. So, add this line after the imports to change your default timeout. You might be able to get away with using a shorter timeout.
 
 ```
 setDefaultTimeout(Number(30000));
 ```
 
-Then define the `BeforeAll` function:
+Next, define the `BeforeAll` function:
 
 ```
 let runner: ClassicRunner;
