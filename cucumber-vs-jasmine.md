@@ -96,3 +96,7 @@ Feature: User Profile Visual Tests
 Instead of needing to copy 16 lines of JavaScript code with Jasmine, your only copying five lines of Gherkin code with Cucumber. These "lines" are merely references to Given, When, and Then steps. In practical terms, they are function references. This feels a lot cleaner and DRY to me than 16 lines of raw JavaScript code.
 
 As you can see, switching to Cucumber will allow our two test suites to share code and keep things DRY. Once we have written the steps for one test suite, the other test suite can easily reuse them.
+
+## Next...
+
+[Switch to Cucumber and Chai]({{ site.baseurl }}{% link switch-to-cucumber-and-chai.md %})
