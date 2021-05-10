@@ -27,7 +27,9 @@ See the section links on the left-hand side.
 ## One Test Suite, or Two
 Depending on your project, it might make sense to have a single test suite that combines functional and visual testing, or have two test suites for different purposes.
 
-We'll demonstrate having two test suites, to separate concerns between functional and visual E2E (end-to-end) testing. This will have a few benefits. For one, it will allow us to execute each test suite independently. Also, since both test suites will be written using Cucumber, Protractor, and Chai, they will able to share their test step definitions and page object helper functions, reducing duplication.
+We'll demonstrate having two test suites to separate concerns between functional and visual E2E (end-to-end) testing. This will allow us to execute each test suite independently. This is helpful if only part of your team needs to run the visual tests, or if you want to break up your E2E tests into two manageable chunks.
+
+Part of the reason why we will switch from Jasmine to Cucumber in a later step is that it will better enable this two test suite approach. The test suites will share their Cucumber/Gherkin step definitions, which will reduce code duplication. We'll cover this later in more depth.
 
 ## Testing an Angular App
 

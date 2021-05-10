@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 7. Applitools Change Detection
+title: 8. Applitools Change Detection
 permalink: /applitools-change-detection/
-nav_order: 8
+nav_order: 9
 ---
 
 # Applitools Change Detection

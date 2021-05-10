@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 3. Switch to Cucumber and Chai
+title: 4. Switch to Cucumber and Chai
 permalink: /switch-to-cucumber-and-chai/
-nav_order: 4
+nav_order: 5
 ---
 
 # Switch to Cucumber and Chai

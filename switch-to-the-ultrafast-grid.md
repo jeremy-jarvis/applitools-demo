@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 6. Switch to the Ultrafast Grid
+title: 7. Switch to the Ultrafast Grid
 permalink: /switch-to-the-ultrafast-grid/
-nav_order: 7
+nav_order: 8
 ---
 
 # Switch to the Ultrafast Grid

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 5. Additional Improvements
+title: 6. Additional Improvements
 permalink: /additional-improvements/
-nav_order: 6
+nav_order: 7
 ---
 
 # Additional Improvements

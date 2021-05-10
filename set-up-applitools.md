@@ -1,8 +1,8 @@
 ---
 layout: page
-title: 4. Set up Applitools
+title: 5. Set up Applitools
 permalink: /set-up-applitools/
-nav_order: 5
+nav_order: 6
 ---
 
 # Set up Applitools
